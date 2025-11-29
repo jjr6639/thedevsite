@@ -592,16 +592,10 @@ const DevPortfolio = () => {
                   <div className="space-y-4">
                     <div>
                       <p className="text-lg font-medium" style={{ color: neonGreen }}>Bachelor of Science</p>
-                      <p className="text-zinc-300">Information Sciences and Technology</p>
+                      <p className="text-zinc-300">Information Science and Technology</p>
                       <p className="text-zinc-400 text-sm">Design and Development Track</p>
                     </div>
                     <div className="flex items-center gap-3 pt-2">
-                      <img 
-                        src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/1200px-Penn_State_Nittany_Lions_logo.svg.png" 
-                        alt="Penn State"
-                        className="w-10 h-10 object-contain"
-                        style={{ filter: 'brightness(0) invert(1)' }}
-                      />
                       <div>
                         <p className="text-zinc-200 font-medium">Penn State University</p>
                         <p className="text-zinc-500 text-sm">University Park, PA</p>
@@ -764,7 +758,7 @@ const DevPortfolio = () => {
                         <span className="text-zinc-600 text-xs px-2 py-1 border border-zinc-700/50 rounded">Placeholder</span>
                       </div>
                       <p className="text-zinc-600 text-sm mb-3">Company Name • Location</p>
-                      <p className="text-zinc-500 text-sm">Your future experience and accomplishments will be displayed here.</p>
+                      <p className="text-zinc-500 text-sm">My future experience and accomplishments will be displayed here.</p>
                     </div>
                   </div>
                 </div>
@@ -796,7 +790,7 @@ const DevPortfolio = () => {
                         <span className="text-zinc-600 text-xs px-2 py-1 border border-zinc-700/50 rounded">Placeholder</span>
                       </div>
                       <p className="text-zinc-600 text-sm mb-3">Company Name • Location</p>
-                      <p className="text-zinc-500 text-sm">Your future internship experience will be showcased here.</p>
+                      <p className="text-zinc-500 text-sm">My future internship experience will be showcased here.</p>
                     </div>
                   </div>
                 </div>
