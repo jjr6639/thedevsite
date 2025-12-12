@@ -14,21 +14,20 @@ const DevPortfolio = () => {
 
     const bootSequence = [
         { text: '> SYSTEM BOOT INITIATED', delay: 0 },
-        { text: '> Loading kernel modules...', delay: 400 },
+        { text: '> Loading SHIVA modules...', delay: 400 },
         { text: '  [OK] Memory allocation complete', delay: 700 },
         { text: '  [OK] CPU cores initialized', delay: 900 },
         { text: '> Mounting file systems...', delay: 1200 },
-        { text: '  [OK] /dev/portfolio mounted', delay: 1500 },
-        { text: '  [OK] /usr/skills loaded', delay: 1700 },
+        { text: '  /select/lightCycle', delay: 1500 },
+        { text: '  /usr/identificationDisk', delay: 1700 },
         { text: '> Initializing neural interface...', delay: 2000 },
-        { text: '  [OK] Synaptic links established', delay: 2400 },
-        { text: '> Starting display server...', delay: 2700 },
+        { text: '  [OK] Synaptic links to Grid established', delay: 2400 },
+        { text: '> Starting Grid server...', delay: 2700 },
         { text: '  [OK] Resolution: MAXIMUM', delay: 3000 },
         { text: '> Authenticating user...', delay: 3300 },
-        { text: '  [OK] Welcome, visitor', delay: 3600 },
-        { text: '> Launching portfolio.exe...', delay: 4000 },
-        { text: '', delay: 4300 },
-        { text: '  SYSTEM READY', delay: 4500 },
+        { text: '  [OK] Welcome to the Grid, User', delay: 3600 },
+        { text: '> ...', delay: 4000 },
+        { text: '  END OF LINE', delay: 4500 },
     ];
 
     // Boot sequence effect
@@ -47,7 +46,7 @@ const DevPortfolio = () => {
         });
     }, []);
 
-    const fullText = 'Building Digital Experiences';
+    const fullText = 'Building Digital Frontiers';
 
     // Typewriter effect - waits for boot to complete
     useEffect(() => {
@@ -78,9 +77,9 @@ const DevPortfolio = () => {
     ];
 
     const projects = [
-        { title: 'DeckForge', desc: 'Desktop Java application for Magic: The Gathering deck management and deck studying', tech: ['Java', 'JavaFX', 'SQLite'] },
+        { title: 'DeckForge', desc: 'Desktop Java application for Magic: The Gathering deck management and deck studying', tech: ['Java', 'Swing', 'SQLite'] },
         { title: 'Top Notch Construction', desc: 'Professional construction company website with modern design and responsive layout', tech: ['React', 'Vite', 'Tailwind CSS'] },
-        { title: 'Neo Tracker', desc: 'React Native mobile application for trail marking and outdoor navigation', tech: ['React Native', 'Expo', 'Maps API'] },
+        { title: 'Neo Tracker', desc: 'React Native mobile application for trail marking and outdoor navigation', tech: ['React Native', 'Expo', 'Google Maps API'] },
     ];
 
     const skillsData = {
@@ -526,7 +525,7 @@ const DevPortfolio = () => {
                         </h1>
 
                         <p className="text-lg text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                            Full-stack developer crafting performant, scalable applications with modern technologies and clean architecture.
+                            Full-stack developer crafting user friendly, scalable applications with modern technologies and clean architecture.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -598,7 +597,6 @@ const DevPortfolio = () => {
                                         </div>
                                         <div className="flex items-center gap-3 pt-2">
                                             <img
-                                                src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/1200px-Penn_State_Nittany_Lions_logo.svg.png"
                                                 alt="Penn State"
                                                 className="w-10 h-10 object-contain"
                                                 style={{ filter: 'brightness(0) invert(1)' }}
@@ -765,7 +763,7 @@ const DevPortfolio = () => {
                                                 <span className="text-zinc-600 text-xs px-2 py-1 border border-zinc-700/50 rounded">Placeholder</span>
                                             </div>
                                             <p className="text-zinc-600 text-sm mb-3">Company Name • Location</p>
-                                            <p className="text-zinc-500 text-sm">Your future experience and accomplishments will be displayed here.</p>
+                                            <p className="text-zinc-500 text-sm">Future experience and accomplishments will be displayed here.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -797,7 +795,7 @@ const DevPortfolio = () => {
                                                 <span className="text-zinc-600 text-xs px-2 py-1 border border-zinc-700/50 rounded">Placeholder</span>
                                             </div>
                                             <p className="text-zinc-600 text-sm mb-3">Company Name • Location</p>
-                                            <p className="text-zinc-500 text-sm">Your future internship experience will be showcased here.</p>
+                                            <p className="text-zinc-500 text-sm">Future internship experience will be showcased here.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -814,7 +812,7 @@ const DevPortfolio = () => {
                                 <span className="text-zinc-100">Featured </span>
                                 <span style={{ color: neonGreen }}>Projects</span>
                             </h2>
-                            <p className="text-zinc-400 max-w-xl mx-auto">A selection of recent work spanning web applications, APIs, and developer tools.</p>
+                            <p className="text-zinc-400 max-w-xl mx-auto">A selection of my recent work spanning web applications, APIs, and developer tools.</p>
                         </div>
 
                         <div className="grid md:grid-cols-3 gap-6">
@@ -1091,10 +1089,10 @@ const DevPortfolio = () => {
                                 {/* Bottom bar */}
                                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                                     <p className="text-xs" style={{ color: 'rgba(0,255,65,0.4)' }}>
-                                        © 2025 // ALL_RIGHTS_RESERVED
+                                        © 2025 // ALL RIGHTS RESERVED
                                     </p>
                                     <p className="text-xs" style={{ color: 'rgba(0,255,65,0.6)' }}>
-                                        {'>'} POWERED_WITH <span style={{ color: '#00ff41' }}>React</span> + <span style={{ color: '#00ff41' }}>Tailwind</span>
+                                        {'>'} POWERED WITH <span style={{ color: '#00ff41' }}>React</span> + <span style={{ color: '#00ff41' }}>Tailwind</span>
                                     </p>
                                 </div>
                             </div>
