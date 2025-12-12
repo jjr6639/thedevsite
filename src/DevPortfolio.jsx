@@ -46,7 +46,7 @@ const DevPortfolio = () => {
         });
     }, []);
 
-    const fullText = 'Building Digital Experiences';
+    const fullText = 'Building Digital Frontiers';
 
     // Typewriter effect - waits for boot to complete
     useEffect(() => {
