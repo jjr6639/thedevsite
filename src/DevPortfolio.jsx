@@ -14,20 +14,20 @@ const DevPortfolio = () => {
 
     const bootSequence = [
         { text: '> SYSTEM BOOT INITIATED', delay: 0 },
-        { text: '> Loading SHIVA modules...', delay: 400 },
+        { text: '> Loading SHIVA LASER modules...', delay: 400 },
         { text: '  [OK] Memory allocation complete', delay: 700 },
         { text: '  [OK] CPU cores initialized', delay: 900 },
         { text: '> Mounting file systems...', delay: 1200 },
-        { text: '  /select/lightCycle', delay: 1500 },
-        { text: '  /usr/identificationDisk', delay: 1700 },
+        { text: '  [OK] /dev/LIGHTCYCLE mounted', delay: 1500 },
+        { text: '  [OK] /usr/IDENTIFICATIONdisk loaded', delay: 1700 },
         { text: '> Initializing neural interface...', delay: 2000 },
-        { text: '  [OK] Synaptic links to Grid established', delay: 2400 },
+        { text: '  [OK] Synaptic links established', delay: 2400 },
         { text: '> Starting Grid server...', delay: 2700 },
         { text: '  [OK] Resolution: MAXIMUM', delay: 3000 },
         { text: '> Authenticating user...', delay: 3300 },
-        { text: '  [OK] Welcome to the Grid, User', delay: 3600 },
-        { text: '> ...', delay: 4000 },
-        { text: '  END OF LINE', delay: 4500 },
+        { text: '  [OK] Welcome To The Grid, User', delay: 3600 },
+        { text: '', delay: 4300 },
+        { text: '  End of Line', delay: 4500 },
     ];
 
     // Boot sequence effect
@@ -46,7 +46,7 @@ const DevPortfolio = () => {
         });
     }, []);
 
-    const fullText = 'Building Digital Frontiers';
+    const fullText = 'Building Digital Experiences';
 
     // Typewriter effect - waits for boot to complete
     useEffect(() => {
@@ -77,9 +77,27 @@ const DevPortfolio = () => {
     ];
 
     const projects = [
-        { title: 'DeckForge', desc: 'Desktop Java application for Magic: The Gathering deck management and deck studying', tech: ['Java', 'Swing', 'SQLite'] },
-        { title: 'Top Notch Construction', desc: 'Professional construction company website with modern design and responsive layout', tech: ['React', 'Vite', 'Tailwind CSS'] },
-        { title: 'Neo Tracker', desc: 'React Native mobile application for trail marking and outdoor navigation', tech: ['React Native', 'Expo', 'Google Maps API'] },
+        {
+            title: 'DeckForge',
+            desc: 'A Magic: The Gathering deck management application built with Java. Demonstrates use of TreeSets, HashMaps, and Java Swing for GUI. Developed for IST 261 Complex Software Engineering at Penn State.',
+            tech: ['Java', 'Swing', 'TreeSet', 'HashMap'],
+            github: 'https://github.com/jjr6639/IST261Project---DeckForge',
+            image: 'https://opengraph.githubassets.com/1/jjr6639/IST261Project---DeckForge'
+        },
+        {
+            title: 'Top Notch Construction',
+            desc: 'A modern, responsive construction company website with orange and space black color scheme, smooth animations, and glassmorphism effects. Features hero section, services showcase, project portfolio, and contact form.',
+            tech: ['React', 'Vite', 'Tailwind CSS'],
+            github: 'https://github.com/jjr6639/Top-Notch-Construction',
+            image: 'https://opengraph.githubassets.com/1/jjr6639/Top-Notch-Construction'
+        },
+        {
+            title: 'Neo Tracker',
+            desc: 'React Native mobile application for trail marking and outdoor navigation with location tracking capabilities.',
+            tech: ['React Native', 'Expo', 'Google Maps API'],
+            github: null,
+            image: null
+        },
     ];
 
     const skillsData = {
@@ -525,7 +543,7 @@ const DevPortfolio = () => {
                         </h1>
 
                         <p className="text-lg text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                            Full-stack developer crafting user friendly, scalable applications with modern technologies and clean architecture.
+                            Full-stack developer building user friendly, scalable applications with modern technologies and clean architecture.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -597,6 +615,7 @@ const DevPortfolio = () => {
                                         </div>
                                         <div className="flex items-center gap-3 pt-2">
                                             <img
+                                                src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/1200px-Penn_State_Nittany_Lions_logo.svg.png"
                                                 alt="Penn State"
                                                 className="w-10 h-10 object-contain"
                                                 style={{ filter: 'brightness(0) invert(1)' }}
@@ -763,7 +782,7 @@ const DevPortfolio = () => {
                                                 <span className="text-zinc-600 text-xs px-2 py-1 border border-zinc-700/50 rounded">Placeholder</span>
                                             </div>
                                             <p className="text-zinc-600 text-sm mb-3">Company Name • Location</p>
-                                            <p className="text-zinc-500 text-sm">Future experience and accomplishments will be displayed here.</p>
+                                            <p className="text-zinc-500 text-sm">Your future experience and accomplishments will be displayed here.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -795,7 +814,7 @@ const DevPortfolio = () => {
                                                 <span className="text-zinc-600 text-xs px-2 py-1 border border-zinc-700/50 rounded">Placeholder</span>
                                             </div>
                                             <p className="text-zinc-600 text-sm mb-3">Company Name • Location</p>
-                                            <p className="text-zinc-500 text-sm">Future internship experience will be showcased here.</p>
+                                            <p className="text-zinc-500 text-sm">Your future internship experience will be showcased here.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -812,19 +831,42 @@ const DevPortfolio = () => {
                                 <span className="text-zinc-100">Featured </span>
                                 <span style={{ color: neonGreen }}>Projects</span>
                             </h2>
-                            <p className="text-zinc-400 max-w-xl mx-auto">A selection of my recent work spanning web applications, APIs, and developer tools.</p>
+                            <p className="text-zinc-400 max-w-xl mx-auto">A selection of recent work spanning web applications, APIs, and developer tools.</p>
                         </div>
 
                         <div className="grid md:grid-cols-3 gap-6">
                             {projects.map((project, index) => (
                                 <div
                                     key={index}
-                                    className="group relative p-6 bg-zinc-900/50 border border-zinc-800/50 transition-all duration-500 hover:border-emerald-500/30"
+                                    className="group relative bg-zinc-900/50 border border-zinc-800/50 transition-all duration-500 hover:border-emerald-500/30 overflow-hidden"
                                     style={{
                                         backdropFilter: 'blur(10px)',
                                         clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%)',
                                     }}
                                 >
+                                    {/* Preview Image */}
+                                    {project.image && (
+                                        <div className="relative w-full h-40 overflow-hidden border-b border-zinc-800/50">
+                                            <img
+                                                src={project.image}
+                                                alt={`${project.title} preview`}
+                                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                                style={{ filter: 'brightness(0.8)' }}
+                                            />
+                                            <div
+                                                className="absolute inset-0"
+                                                style={{ background: 'linear-gradient(to top, rgba(9,9,11,0.9) 0%, transparent 50%)' }}
+                                            />
+                                        </div>
+                                    )}
+
+                                    {/* No image placeholder */}
+                                    {!project.image && (
+                                        <div className="relative w-full h-40 overflow-hidden border-b border-zinc-800/50 flex items-center justify-center" style={{ background: 'rgba(0,255,65,0.03)' }}>
+                                            <span style={{ color: 'rgba(0,255,65,0.3)', fontSize: '3rem' }}>{'</>'}</span>
+                                        </div>
+                                    )}
+
                                     <div
                                         className="absolute top-0 right-0 w-12 h-12 transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:opacity-30"
                                         style={{
@@ -832,19 +874,35 @@ const DevPortfolio = () => {
                                             clipPath: 'polygon(100% 0, 100% 100%, 0 0)',
                                         }}
                                     />
-                                    <div className="relative">
-                                        <div
-                                            className="w-10 h-10 mb-4 flex items-center justify-center border border-zinc-700/50"
-                                            style={{
-                                                background: 'rgba(0, 255, 65, 0.1)',
-                                                color: neonGreen,
-                                                clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%)',
-                                            }}
-                                        >
-                                            {index + 1}
+                                    <div className="relative p-6">
+                                        <div className="flex items-center justify-between mb-3">
+                                            <div
+                                                className="w-10 h-10 flex items-center justify-center border border-zinc-700/50"
+                                                style={{
+                                                    background: 'rgba(0, 255, 65, 0.1)',
+                                                    color: neonGreen,
+                                                    clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%)',
+                                                }}
+                                            >
+                                                {index + 1}
+                                            </div>
+                                            {project.github && (
+                                                <a
+                                                    href={project.github}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-2 px-3 py-1.5 text-xs border border-zinc-700/50 hover:border-emerald-500/50 transition-all duration-300"
+                                                    style={{ color: 'rgba(0,255,65,0.7)' }}
+                                                    onMouseEnter={(e) => e.currentTarget.style.color = '#00ff41'}
+                                                    onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(0,255,65,0.7)'}
+                                                >
+                                                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                                    GitHub
+                                                </a>
+                                            )}
                                         </div>
                                         <h3 className="text-xl font-semibold text-zinc-100 mb-2">{project.title}</h3>
-                                        <p className="text-zinc-400 text-sm mb-4">{project.desc}</p>
+                                        <p className="text-zinc-400 text-sm mb-4 line-clamp-3">{project.desc}</p>
                                         <div className="flex flex-wrap gap-2">
                                             {project.tech.map((t, i) => (
                                                 <span
